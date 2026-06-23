@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon Portfolio</title>
+<style>
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+  }
+
+  header {
+    background-color: #111111;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 3px solid #e8a23d;
+  }
+
+  header h1 {
+    color: #e8a23d;
+    margin-bottom: 10px;
+  }
+
+  header p {
+    color: #aaaaaa;
+  }
+
+  nav {
+    background-color: #222222;
+    padding: 15px;
+    text-align: center;
+  }
+
+  nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    color: #e8a23d;
+  }
+
+  .section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    border-bottom: 1px solid #333333;
+  }
+
+  .section h2 {
+    color: #e8a23d;
+    border-left: 4px solid #e8a23d;
+    padding-left: 10px;
+  }
+
+  .projet {
+    background-color: #222222;
+    border: 1px solid #333333;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+
+  .projet h3 {
+    color: #ffffff;
+    margin-top: 0;
+  }
+
+  .projet p {
+    color: #cccccc;
+    line-height: 1.6;
+  }
+
+  .technos {
+    margin-top: 10px;
+    font-style: italic;
+    color: #888888;
+  }
+
+  ul {
+    line-height: 1.8;
+    color: #cccccc;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: #777777;
+    font-size: 14px;
+  }
+
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>Camille Tripot</h1>
+    <p>Étudiant en BUT Informatique</p>
+  </header>
+
+  <nav>
+    <a href="#apropos">À propos</a>
+    <a href="#projets">Mes projets</a>
+    <a href="#competences">Compétences</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="section" id="apropos">
+    <h2>À propos de moi</h2>
+    <p>
+      Je suis étudiant en BUT Informatique. Je m'intéresse au développement de jeux vidéo
+      et à la programmation en général. Cette année, j'ai travaillé en équipe de 3 personnes
+      sur un projet de remake du jeu Five Nights at Freddy's 4 en C#.
+    </p>
+  </div>
+
+  <div class="section" id="projets">
+    <h2>Mes projets</h2>
+
+    <div class="projet">
+      <h3>Remake FNAF 4</h3>
+      <p>
+        Projet réalisé en équipe de 3 dans le cadre de ma première année de BUT.
+        Le but était de recréer le jeu Five Nights at Freddy's 4, où le joueur doit
+        surveiller les bruits autour de lui dans le noir pour survivre.
+      </p>
+      <p>
+        J'ai travaillé sur la logique du jeu (les différentes phases de la nuit) et
+        sur le déclenchement des sons en fonction des actions du joueur.
+      </p>
+      <div class="technos">Langage utilisé : C#</div>
+    </div>
+
+    <div class="projet">
+      <h3>Puissance 4 en réseau</h3>
+      <p>
+        Petit projet en C pour apprendre à faire communiquer deux programmes entre eux
+        via le réseau (sockets TCP). Le jeu permet à deux joueurs de jouer au Puissance 4
+        chacun depuis leur ordinateur.
+      </p>
+      <div class="technos">Langage utilisé : C</div>
+    </div>
+
+  </div>
+
+  <div class="section" id="competences">
+    <h2>Mes compétences</h2>
+    <ul>
+      <li>Langage C#</li>
+      <li>Langage C</li>
+      <li>Python</li>
+      <li>HTML / CSS</li>
+      <li>Travail en équipe</li>
+      <li>Git (gestion de versions)</li>
+    </ul>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>Me contacter</h2>
+    <p>Email : camille.tripot@exemple.fr</p>
+    <p>GitHub : github.com/ctripot</p>
+  </div>
+
+  <footer>
+    Portfolio réalisé dans le cadre du BUT Informatique - 2026
+  </footer>
+
+</body>
+</html>
